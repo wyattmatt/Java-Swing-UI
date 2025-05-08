@@ -8,7 +8,7 @@ This project is a custom Java Swing application built with Gradle that simulates
 * **Custom Draggable Navbar**: The top `NavbarPanel` allows the user to drag and move the entire window.
 * **Resizable Edges**: The edges and corners of the application window are resizable via custom mouse listeners.
 * **Split Pane Layout**: The left-side `SidebarPanel` and right-side `CharacterGridPanel` are embedded inside a `JSplitPane`.
-* **Placeholder Images**: Uses `https://placehold.co/` for character thumbnails.
+* **Resources Images**: Uses `/resources/images/example.png` for character thumbnails.
 
 ## Technologies
 
@@ -49,7 +49,7 @@ cd Java-Swing-UI
 
 ## Screenshots
 
-> You can update this section with actual UI screenshots once the character images and design are finalized.
+![Example](example.png)
 
 ## License
 
