@@ -18,7 +18,7 @@ public class App {
             JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, sidebar, characterGrid);
             splitPane.setDividerLocation(180);
             splitPane.setOneTouchExpandable(true);
-            splitPane.setDividerSize(6);
+            splitPane.setDividerSize(1);
             splitPane.setResizeWeight(0.0);
             splitPane.setBorder(null);
             splitPane.setFocusable(false);
