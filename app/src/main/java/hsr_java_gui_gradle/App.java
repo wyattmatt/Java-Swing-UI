@@ -12,7 +12,6 @@ public class App {
             frame.setSize(1200, 800);
             frame.setLayout(new BorderLayout());
 
-            frame.add(new NavbarPanel(), BorderLayout.NORTH);
             SidebarPanel sidebar = new SidebarPanel();
             CharacterGridPanel characterGrid = new CharacterGridPanel();
 
@@ -22,10 +21,15 @@ public class App {
             splitPane.setDividerSize(6);
             splitPane.setResizeWeight(0.0);
             splitPane.setBorder(null);
+            splitPane.setFocusable(false);
 
             frame.add(splitPane, BorderLayout.CENTER);
 
-            ResizableFrameHelper.makeResizable(frame);
+            NavbarPanel navbar = new NavbarPanel();
+            frame.add(navbar, BorderLayout.NORTH);
+            new DraggableHelper(navbar, frame);
+
+            ResizableOverlayHelper.install(frame);
 
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setLocationRelativeTo(null);
