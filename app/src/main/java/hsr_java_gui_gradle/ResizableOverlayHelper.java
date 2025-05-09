@@ -13,8 +13,8 @@ public class ResizableOverlayHelper {
         JPanel glass = new JPanel(null) {
             @Override
             public boolean contains(int x, int y) {
-                return x < BORDER || x > getWidth() - BORDER ||
-                       y < BORDER || y > getHeight() - BORDER;
+                return  x < BORDER || x > getWidth() - BORDER ||
+                        y < BORDER || y > getHeight() - BORDER;
             }
         };
 

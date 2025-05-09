@@ -29,13 +29,11 @@ public class SidebarPanel extends JPanel {
             button.setFont(new Font("SansSerif", Font.PLAIN, 14));
             button.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-            // ✅ Consistent sizing
             button.setPreferredSize(new Dimension(140, 35));
             button.setMaximumSize(new Dimension(Integer.MAX_VALUE, 35));
             button.setMinimumSize(new Dimension(140, 35));
             button.setMargin(new Insets(5, 10, 5, 10));
 
-            // ✅ On click: highlight + navigate
             button.addActionListener(e -> {
                 if (!name.equals(selected)) {
                     setSelected(name);
@@ -47,23 +45,23 @@ public class SidebarPanel extends JPanel {
 
             buttons.put(name, button);
             add(button);
-            add(Box.createRigidArea(new Dimension(0, 5))); // spacing
+            add(Box.createRigidArea(new Dimension(0, 5)));
         }
 
-        add(Box.createVerticalGlue()); // push content to top
-        setSelected("Home"); // default selected
+        add(Box.createVerticalGlue());
+        setSelected("Home");
     }
 
     public void setSelected(String name) {
         if (selected != null && buttons.containsKey(selected)) {
-            buttons.get(selected).setBackground(new Color(60, 60, 60)); // unselected
+            buttons.get(selected).setBackground(new Color(60, 60, 60));
             buttons.get(selected).setFont(new Font("SansSerif", Font.PLAIN, 14));
         }
 
         selected = name;
 
         if (buttons.containsKey(name)) {
-            buttons.get(name).setBackground(new Color(70, 130, 180)); // blue highlight
+            buttons.get(name).setBackground(new Color(70, 130, 180));
             buttons.get(name).setFont(new Font("SansSerif", Font.BOLD, 14));
         }
     }
