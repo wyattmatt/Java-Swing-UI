@@ -1,10 +1,14 @@
 package hsr_java_gui_gradle;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.Cursor;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-public class ResizableOverlayHelper {
+public class Resizable {
     private static final int BORDER = 8;
     private static final int MIN_WIDTH = 400;
     private static final int MIN_HEIGHT = 300;
@@ -13,8 +17,8 @@ public class ResizableOverlayHelper {
         JPanel glass = new JPanel(null) {
             @Override
             public boolean contains(int x, int y) {
-                return x < BORDER || x > getWidth() - BORDER ||
-                       y < BORDER || y > getHeight() - BORDER;
+                return  x < BORDER || x > getWidth() - BORDER ||
+                        y < BORDER || y > getHeight() - BORDER;
             }
         };
 
@@ -40,6 +44,11 @@ public class ResizableOverlayHelper {
 
         @Override
         public void mouseMoved(MouseEvent e) {
+            if ((frame.getExtendedState() & JFrame.MAXIMIZED_BOTH) == JFrame.MAXIMIZED_BOTH) {
+                glass.setCursor(Cursor.getDefaultCursor());
+                dragCursor = Cursor.DEFAULT_CURSOR;
+                return;
+            }
             dragCursor = getCursor(e.getPoint());
             glass.setCursor(Cursor.getPredefinedCursor(dragCursor));
         }
@@ -51,7 +60,8 @@ public class ResizableOverlayHelper {
 
         @Override
         public void mouseDragged(MouseEvent e) {
-            if (dragCursor == Cursor.DEFAULT_CURSOR || clickPoint == null) return;
+            if ((frame.getExtendedState() & JFrame.MAXIMIZED_BOTH) == JFrame.MAXIMIZED_BOTH ||
+                dragCursor == Cursor.DEFAULT_CURSOR || clickPoint == null) return;
 
             Point screenPoint = e.getLocationOnScreen();
             Point frameLoc = frame.getLocationOnScreen();
