@@ -78,8 +78,8 @@ public class CharacterGridPanel extends JScrollPane {
 
         setViewportView(gridPanel);
         getVerticalScrollBar().setUnitIncrement(8);
-        getVerticalScrollBar().setUI(new CustomScrollBarUI());
-        getHorizontalScrollBar().setUI(new CustomScrollBarUI());
+        getVerticalScrollBar().setUI(new CustomScrollBarVertical());
+        getHorizontalScrollBar().setUI(new CustomScrollBarHorizontal());
         getViewport().setOpaque(false);
         setOpaque(false);
         setBorder(null);
