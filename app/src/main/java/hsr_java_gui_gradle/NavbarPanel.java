@@ -48,6 +48,27 @@ public class NavbarPanel extends JPanel {
         button.setBackground(bgColor);
         button.setForeground(Color.WHITE);
         button.setAlignmentY(Component.CENTER_ALIGNMENT);
+
+        // Store the original color for restoration
+        Color originalBg = bgColor;
+        Color hoverBg = new Color(
+            Math.min(bgColor.getRed() + 20, 255),
+            Math.min(bgColor.getGreen() + 20, 255),
+            Math.min(bgColor.getBlue() + 20, 255)
+        );
+
+        button.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                button.setBackground(hoverBg);
+            }
+
+            @Override
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                button.setBackground(originalBg);
+            }
+        });
+
         return button;
     }
 }

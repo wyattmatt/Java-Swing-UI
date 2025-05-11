@@ -58,7 +58,7 @@ public class JadePanel extends JPanel {
         topPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 12, 0));
 
         // Title Label
-        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#B85EFF;'>Jade</div></html>");
+        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#7E74EB;'>Jade</div></html>");
         titleLabel.setVerticalAlignment(JLabel.CENTER);
         titleLabel.setBorder(new EmptyBorder(10, 20, 10, 10));
 
@@ -67,7 +67,7 @@ public class JadePanel extends JPanel {
         layeredPane.setPreferredSize(new Dimension(250, 150));
 
         // Parallelogram background panel
-        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(130, 70, 190));
+        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(0x6057C9));
         parallelogram.setBounds(30, 27, 184, 110); // Parallelogram position
 
         // Image label
@@ -110,10 +110,10 @@ public class JadePanel extends JPanel {
         introText.setContentType("text/html");
         introText.setText("""
             <html><body style='color:white; font-family:sans-serif; font-size:14px;'>
-            <b style='color:#B85EFF;'>Jade</b> is a <b style='color:#FFD700;'>5★</b> character from the <b style='color:#B85EFF;'>Quantum</b> element who follows the <b>Path of Erudition</b>.<br><br>
-            In that holy city kissed by the dawn, the weaver caresses the golden thread and connects destiny. Aglaea the Goldweaver, 
-            the Chrysos Heir bearing the Coreflame of "Romance"... You shall summon the heroes of this world, and lead them to once 
-            again embark on an endless journey where they will smite down the gods, return the divine fire, and grant rebirth to the dying land of Amphoreus.
+            <b style='color:#7E74EB;'>Jade</b> is a <b style='color:#C9A36A;'>5★</b> character from the <b style='color:#7E74EB;'>Quantum</b> element who follows the <b style="color:#C65ADE;">Path of Erudition</b>.<br><br>
+            A senior manager in the IPC Strategic Investment Department and one of the Ten Stonehearts. Her Cornerstone is "Jade of Credit." A cold and elegant moneylender, 
+            she is skilled at understanding the human heart, with a personal hobby called "Bonajade Exchange." She's willing to wait patiently for high-value acquisitions 
+            and adept at extracting value from seemingly destitute clients.
             </body></html>
         """);
         introText.setEditable(false);

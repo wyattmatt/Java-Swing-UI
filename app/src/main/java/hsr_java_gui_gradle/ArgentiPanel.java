@@ -58,7 +58,7 @@ public class ArgentiPanel extends JPanel {
         topPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 12, 0));
 
         // Title Label
-        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#B85EFF;'>Argenti</div></html>");
+        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#979797;'>Argenti</div></html>");
         titleLabel.setVerticalAlignment(JLabel.CENTER);
         titleLabel.setBorder(new EmptyBorder(10, 20, 10, 10));
 
@@ -67,7 +67,7 @@ public class ArgentiPanel extends JPanel {
         layeredPane.setPreferredSize(new Dimension(250, 150));
 
         // Parallelogram background panel
-        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(130, 70, 190));
+        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(97, 97, 97));
         parallelogram.setBounds(30, 27, 184, 110); // Parallelogram position
 
         // Image label
@@ -110,10 +110,10 @@ public class ArgentiPanel extends JPanel {
         introText.setContentType("text/html");
         introText.setText("""
             <html><body style='color:white; font-family:sans-serif; font-size:14px;'>
-            <b style='color:#B85EFF;'>Argenti</b> is a <b style='color:#FFD700;'>5★</b> character from the <b style='color:#B85EFF;'>Physical</b> element who follows the <b>Path of Erudition</b>.<br><br>
-            In that holy city kissed by the dawn, the weaver caresses the golden thread and connects destiny. Aglaea the Goldweaver, 
-            the Chrysos Heir bearing the Coreflame of "Romance"... You shall summon the heroes of this world, and lead them to once 
-            again embark on an endless journey where they will smite down the gods, return the divine fire, and grant rebirth to the dying land of Amphoreus.
+            <b style='color:#979797;'>Argenti</b> is a <b style='color:#C9A36A;'>5★</b> character from the <b style='color:#979797;'>Physical</b> element who follows the <b style='color:#C65ADE;'>Path of Erudition</b>.<br><br>
+            A classic knight of the Knights of Beauty. Forthright and candid, this noble and admirable man wanders the cosmos alone, resolutely following the Path of Beauty. 
+            Upholding the good name of Beauty is Argenti's duty. To fulfill this responsibility, one's must be pious when one initiates battle, and one must make their 
+            opponent yield willingly when one strikes with one's spear.
             </body></html>
         """);
         introText.setEditable(false);

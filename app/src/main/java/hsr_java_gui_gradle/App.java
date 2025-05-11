@@ -124,7 +124,7 @@ public class App {
                 error.setHorizontalAlignment(SwingConstants.CENTER);
 
                 // Sub message below
-                JLabel subError = new JLabel("<html><div style='text-align: center;'>The page you were looking for could not be found. It might have been removed, renamed, or did not exist<br>" + " in the first place.</div></html>");
+                JLabel subError = new JLabel("<html><div style='text-align: center;'>The page you were looking for could not be found. It might have been removed,<br>" + " renamed, or did not exist in the first place.</div></html>");
                 subError.setFont(new Font("SansSerif", Font.PLAIN, 18));
                 subError.setForeground(new Color(0xA9A9A9));
                 subError.setHorizontalAlignment(SwingConstants.CENTER);

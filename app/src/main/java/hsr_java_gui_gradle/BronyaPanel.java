@@ -58,7 +58,7 @@ public class BronyaPanel extends JPanel {
         topPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 12, 0));
 
         // Title Label
-        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#B85EFF;'>Bronya</div></html>");
+        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#61CF93;'>Bronya</div></html>");
         titleLabel.setVerticalAlignment(JLabel.CENTER);
         titleLabel.setBorder(new EmptyBorder(10, 20, 10, 10));
 
@@ -67,7 +67,7 @@ public class BronyaPanel extends JPanel {
         layeredPane.setPreferredSize(new Dimension(250, 150));
 
         // Parallelogram background panel
-        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(130, 70, 190));
+        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(0x61CF93));
         parallelogram.setBounds(30, 27, 184, 110); // Parallelogram position
 
         // Image label
@@ -110,10 +110,10 @@ public class BronyaPanel extends JPanel {
         introText.setContentType("text/html");
         introText.setText("""
             <html><body style='color:white; font-family:sans-serif; font-size:14px;'>
-            <b style='color:#B85EFF;'>Bronya</b> is a <b style='color:#FFD700;'>5★</b> character from the <b style='color:#B85EFF;'>Wind</b> element who follows the <b>Path of Harmony</b>.<br><br>
-            In that holy city kissed by the dawn, the weaver caresses the golden thread and connects destiny. Aglaea the Goldweaver, 
-            the Chrysos Heir bearing the Coreflame of "Romance"... You shall summon the heroes of this world, and lead them to once 
-            again embark on an endless journey where they will smite down the gods, return the divine fire, and grant rebirth to the dying land of Amphoreus.
+            <b style='color:#61CF93;'>Bronya</b> is a <b style='color:#C9A36A;'>5★</b> character from the <b style='color:#61CF93;'>Wind</b> element who follows the <b style="color:#2692D3;">Path of Harmony</b>.<br><br>
+            Heir to the Supreme Guardian of Belobog, she is the young and capable commander of the Silvermane Guards. Bronya received rigorous education from an early age, 
+            and possesses the grace and affinity as expected of an heir. However, after witnessing the abysmal conditions in the Underworld, seeds of doubt began growing 
+            in Belobog's future leader's mind. "Can all the training I've received really help me lead the people to the lives they want?"
             </body></html>
         """);
         introText.setEditable(false);

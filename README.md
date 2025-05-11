@@ -1,60 +1,88 @@
-# Java Swing UI - Honkai: Star Rail Character Viewer
+# Java Swing UI - Honkai: Star Rail Inspired Interface
 
-This project is a custom Java Swing application built with Gradle that simulates a character list interface similar to Honkai: Star Rail. It features a frameless, resizable, and draggable window layout using custom-built UI components.
+A custom-designed Java Swing UI inspired by the character selection menu in Honkai: Star Rail. This project showcases a modern desktop layout using `JFrame`, `JSplitPane`, `JPanel`, and custom-drawn components. Built with Java Swing and Gradle.
 
-## Features
-
-* **Frameless Window**: The native OS window decoration is removed using `setUndecorated(true)`.
-* **Custom Draggable Navbar**: The top `NavbarPanel` allows the user to drag and move the entire window.
-* **Resizable Edges**: The edges and corners of the application window are resizable via custom mouse listeners.
-* **Split Pane Layout**: The left-side `SidebarPanel` and right-side `CharacterGridPanel` are embedded inside a `JSplitPane`.
-* **Resources Images**: Uses `/resources/images/example.png` for character thumbnails.
-
-## Technologies
-
-* Java 17+
-* Swing & AWT
-* Gradle
-
-## Project Structure
-
-```
-src/
-  main/
-    java/
-      hsr_java_gui_gradle/
-        App.java
-        NavbarPanel.java
-        SidebarPanel.java
-        CharacterGridPanel.java
-        CharacterCard.java
-        ResizableFrameHelper.java
-```
-
-## How to Run
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/wyattmatt/Java-Swing-UI.git
-cd Java-Swing-UI
-```
-
-2. Build and run with Gradle:
-
-```bash
-./gradlew build
-./gradlew run
-```
-
-## Screenshots
-
-![Example](example.png)
-
-## License
-
-This project is for educational and non-commercial use only.
+![Preview](example.png)
 
 ---
 
-Feel free to modify or extend the layout to include filtering, character detail pages, or dynamic loading in the future.
+## ✨ Features
+
+* Frameless, draggable, and resizable main window
+* Sidebar navigation with visually highlighted buttons
+* Dynamic content swapping (Home, Characters, etc.)
+* Scrollable character grid with image cards
+* Character card click behavior (e.g. opens `AcheronPanel`)
+* Custom dark/light themed components
+* Custom ScrollBar UI with arrow rendering (↑ ↓ ← →)
+* Modern flat UI with rounded corners
+
+---
+
+## 🧱 Technologies Used
+
+* Java 17+
+* Java Swing (UI components)
+* Gradle (build system)
+* VSCode + Java Extensions
+
+---
+
+## 🧩 Folder Structure
+
+```
+Java-Swing-UI/
+├── app/
+│   └── src/
+│       ├── main/
+│       │   ├── java/hsr_java_gui_gradle/   # All main source files
+│       │   └── resources/images/          # Character images
+│       └── test/                          # Optional test folder
+├── build.gradle
+├── settings.gradle
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Java 17 or higher
+* Gradle installed or use the included `gradlew`
+
+### Run the App
+
+```bash
+./gradlew run
+```
+
+Or manually compile and run from `App.java`.
+
+---
+
+## 🧙‍♂️ Navigation Logic
+
+* Sidebar buttons (`SidebarPanel`) use a listener to update the main content panel via `App.switchContentPanel(...)`
+* New character detail pages (e.g. `AcheronPanel.java`) are shown when their corresponding `CharacterCard` is clicked.
+
+---
+
+## 📦 Future Ideas
+
+* Add more character panels
+* Implement filter/sorting in CharacterGrid
+* Add animations (hover/fade/slide transitions)
+* Export character data from a JSON file
+* Implement light/dark theme switcher
+
+---
+
+## 🙌 Credits
+
+This project was created by [@wyattmatt](https://github.com/wyattmatt) as a UI design showcase.
+
+---
+
+> Designed with love, inspired by HoYoverse.

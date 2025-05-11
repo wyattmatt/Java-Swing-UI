@@ -14,7 +14,7 @@ public abstract class SidebarButton extends JButton {
         setBorderPainted(false);
         setContentAreaFilled(true);
         setBackground(new Color(60, 60, 60));
-        setForeground(Color.WHITE);
+        setForeground(Color.LIGHT_GRAY);
         setFont(new Font("SansSerif", Font.PLAIN, 14));
         setAlignmentX(Component.CENTER_ALIGNMENT);
         setPreferredSize(new Dimension(140, 35));

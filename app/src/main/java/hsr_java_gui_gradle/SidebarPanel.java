@@ -3,10 +3,12 @@ package hsr_java_gui_gradle;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import javax.swing.BorderFactory;
 import javax.swing.Box;
+import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JPanel;
 
@@ -35,6 +37,7 @@ public class SidebarPanel extends JPanel {
 
         for (SidebarButton button : buttonInstances) {
             String name = button.getText();
+
             button.addActionListener(e -> {
                 if (!name.equals(selected) || "Characters".equals(name)) {
                     setSelected(name);
@@ -43,6 +46,23 @@ public class SidebarPanel extends JPanel {
                     }
                     if (navigationListener != null) {
                         navigationListener.onNavigate(name);
+                    }
+                }
+            });
+
+            // Hover effect
+            button.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseEntered(MouseEvent e) {
+                    if (!name.equals(selected)) {
+                        button.setForeground(new Color(255, 255, 255, 255));
+                    }
+                }
+
+                @Override
+                public void mouseExited(MouseEvent e) {
+                    if (!name.equals(selected)) {
+                        button.setForeground(Color.LIGHT_GRAY);
                     }
                 }
             });
@@ -59,6 +79,7 @@ public class SidebarPanel extends JPanel {
     public void setSelected(String name) {
         if (selected != null && buttons.containsKey(selected)) {
             buttons.get(selected).setBackground(new Color(60, 60, 60));
+            buttons.get(selected).setForeground(Color.LIGHT_GRAY);
             buttons.get(selected).setFont(new Font("SansSerif", Font.PLAIN, 14));
         }
 
@@ -66,6 +87,7 @@ public class SidebarPanel extends JPanel {
 
         if (buttons.containsKey(name)) {
             buttons.get(name).setBackground(new Color(80, 90, 120));
+            buttons.get(name).setForeground(new Color(255, 255, 255, 255));
             buttons.get(name).setFont(new Font("SansSerif", Font.BOLD, 14));
         }
     }

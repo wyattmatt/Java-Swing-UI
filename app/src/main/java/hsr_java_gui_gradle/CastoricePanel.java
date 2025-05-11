@@ -58,7 +58,7 @@ public class CastoricePanel extends JPanel {
         topPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 12, 0));
 
         // Title Label
-        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#B85EFF;'>Castorice</div></html>");
+        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#7E74EB;'>Castorice</div></html>");
         titleLabel.setVerticalAlignment(JLabel.CENTER);
         titleLabel.setBorder(new EmptyBorder(10, 20, 10, 10));
 
@@ -67,7 +67,7 @@ public class CastoricePanel extends JPanel {
         layeredPane.setPreferredSize(new Dimension(250, 150));
 
         // Parallelogram background panel
-        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(130, 70, 190));
+        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(0x6057C9));
         parallelogram.setBounds(30, 27, 184, 110); // Parallelogram position
 
         // Image label
@@ -110,7 +110,7 @@ public class CastoricePanel extends JPanel {
         introText.setContentType("text/html");
         introText.setText("""
             <html><body style='color:white; font-family:sans-serif; font-size:14px;'>
-            <b style='color:#B85EFF;'>Castorice</b> is a <b style='color:#FFD700;'>5★</b> character from the <b style='color:#B85EFF;'>Quantum</b> element who follows the <b>Path of Remembrance</b>.<br><br>
+            <b style='color:#7E74EB;'>Castorice</b> is a <b style='color:#C9A36A;'>5★</b> character from the <b style='color:#7E74EB;'>Quantum</b> element who follows the <b>Path of Remembrance</b>.<br><br>
             In that holy city kissed by the dawn, the weaver caresses the golden thread and connects destiny. Aglaea the Goldweaver, 
             the Chrysos Heir bearing the Coreflame of "Romance"... You shall summon the heroes of this world, and lead them to once 
             again embark on an endless journey where they will smite down the gods, return the divine fire, and grant rebirth to the dying land of Amphoreus.

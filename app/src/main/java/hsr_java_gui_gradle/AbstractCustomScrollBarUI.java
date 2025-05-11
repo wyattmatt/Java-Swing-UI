@@ -1,8 +1,16 @@
 package hsr_java_gui_gradle;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.RenderingHints;
+import javax.swing.JComponent;
+import javax.swing.JButton;
+import javax.swing.JScrollBar;
 import javax.swing.plaf.basic.BasicScrollBarUI;
+import java.awt.Dimension;
+import java.awt.Polygon;
 
 public abstract class AbstractCustomScrollBarUI extends BasicScrollBarUI {
     protected static final int ARROW_SIZE = 8;

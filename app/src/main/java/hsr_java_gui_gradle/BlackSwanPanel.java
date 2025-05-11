@@ -58,7 +58,7 @@ public class BlackSwanPanel extends JPanel {
         topPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 12, 0));
 
         // Title Label
-        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#B85EFF;'>BlackSwan</div></html>");
+        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#61CF93;'>Black Swan</div></html>");
         titleLabel.setVerticalAlignment(JLabel.CENTER);
         titleLabel.setBorder(new EmptyBorder(10, 20, 10, 10));
 
@@ -67,7 +67,7 @@ public class BlackSwanPanel extends JPanel {
         layeredPane.setPreferredSize(new Dimension(250, 150));
 
         // Parallelogram background panel
-        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(130, 70, 190));
+        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(0x61CF93));
         parallelogram.setBounds(30, 27, 184, 110); // Parallelogram position
 
         // Image label
@@ -110,10 +110,10 @@ public class BlackSwanPanel extends JPanel {
         introText.setContentType("text/html");
         introText.setText("""
             <html><body style='color:white; font-family:sans-serif; font-size:14px;'>
-            <b style='color:#B85EFF;'>Black Swan</b> is a <b style='color:#FFD700;'>5★</b> character from the <b style='color:#B85EFF;'>Wind</b> element who follows the <b>Path of Nilihity</b>.<br><br>
-            In that holy city kissed by the dawn, the weaver caresses the golden thread and connects destiny. Aglaea the Goldweaver, 
-            the Chrysos Heir bearing the Coreflame of "Romance"... You shall summon the heroes of this world, and lead them to once 
-            again embark on an endless journey where they will smite down the gods, return the divine fire, and grant rebirth to the dying land of Amphoreus.
+            <b style='color:#61CF93;'>Black Swan</b> is a <b style='color:#C9A36A;'>5★</b> character from the <b style='color:#61CF93;'>Wind</b> element who follows the <b style="color:#7E74EB;">Path of Nilihity</b>.<br><br>
+            A Memokeeper of the Garden of Recollection. A mysterious and elegant soothsayer. Bears a warm smile and is willing to patiently heed the words of another, 
+            and thus uses such means as a pretext to enter "memories" and gain a comprehension over the flow of all information. Feels strongly about collecting unique memories, 
+            yet the thoughts that guide her are hard to glean.
             </body></html>
         """);
         introText.setEditable(false);

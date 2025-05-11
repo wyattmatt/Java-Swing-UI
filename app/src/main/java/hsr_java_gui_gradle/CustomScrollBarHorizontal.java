@@ -1,7 +1,9 @@
 package hsr_java_gui_gradle;
 
-import java.awt.*;
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JScrollBar;
+import java.awt.Dimension;
 
 public class CustomScrollBarHorizontal extends AbstractCustomScrollBarUI {
 

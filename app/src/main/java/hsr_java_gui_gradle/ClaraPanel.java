@@ -58,7 +58,7 @@ public class ClaraPanel extends JPanel {
         topPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 12, 0));
 
         // Title Label
-        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#B85EFF;'>Clara</div></html>");
+        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#979797;'>Clara</div></html>");
         titleLabel.setVerticalAlignment(JLabel.CENTER);
         titleLabel.setBorder(new EmptyBorder(10, 20, 10, 10));
 
@@ -67,7 +67,7 @@ public class ClaraPanel extends JPanel {
         layeredPane.setPreferredSize(new Dimension(250, 150));
 
         // Parallelogram background panel
-        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(130, 70, 190));
+        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(0x979797));
         parallelogram.setBounds(30, 27, 184, 110); // Parallelogram position
 
         // Image label
@@ -110,10 +110,11 @@ public class ClaraPanel extends JPanel {
         introText.setContentType("text/html");
         introText.setText("""
             <html><body style='color:white; font-family:sans-serif; font-size:14px;'>
-            <b style='color:#B85EFF;'>Clara</b> is a <b style='color:#FFD700;'>5★</b> character from the <b style='color:#B85EFF;'>Physical</b> element who follows the <b>Path of Destruction</b>.<br><br>
-            In that holy city kissed by the dawn, the weaver caresses the golden thread and connects destiny. Aglaea the Goldweaver, 
-            the Chrysos Heir bearing the Coreflame of "Romance"... You shall summon the heroes of this world, and lead them to once 
-            again embark on an endless journey where they will smite down the gods, return the divine fire, and grant rebirth to the dying land of Amphoreus.
+            <b style='color:#979797;'>Clara</b> is a <b style='color:#C9A36A;'>5★</b> character from the <b style='color:#979797;'>Physical</b> element who follows the <b style='color:#E6D863;'>Path of Destruction</b>.<br><br>
+            A shy young girl with no home, Clara had no choice but to join the prospectors to survive. She inadvertently reactivated a dormant relic from 
+            a past civilization — the robot Svarog. "To have a family." This is Clara's response when asked what she wishes for most. Before long, the usually 
+            self-servicing prospectors were united as one under the leadership of Svarog. Around the same time, a mysterious prospector was spotted in the Fragmentum, 
+            a red-hooded specter adept at retrieving rare relics from the most dangerous places.Terrified prospectors call this ghostly figure... the Bloody Rabbit.
             </body></html>
         """);
         introText.setEditable(false);

@@ -58,7 +58,7 @@ public class BailuPanel extends JPanel {
         topPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 12, 0));
 
         // Title Label
-        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#B85EFF;'>Bailu</div></html>");
+        JLabel titleLabel = new JLabel("<html><div style='font-size:12px; color:#DFDFDF;'>HONKAI: STAR RAIL<br></div><div style='font-size:36px; color:#C65ADE;'>Bailu</div></html>");
         titleLabel.setVerticalAlignment(JLabel.CENTER);
         titleLabel.setBorder(new EmptyBorder(10, 20, 10, 10));
 
@@ -67,7 +67,7 @@ public class BailuPanel extends JPanel {
         layeredPane.setPreferredSize(new Dimension(250, 150));
 
         // Parallelogram background panel
-        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(130, 70, 190));
+        ParallelogramPanel parallelogram = new ParallelogramPanel(new Color(0xC65ADE));
         parallelogram.setBounds(30, 27, 184, 110); // Parallelogram position
 
         // Image label
@@ -110,10 +110,10 @@ public class BailuPanel extends JPanel {
         introText.setContentType("text/html");
         introText.setText("""
             <html><body style='color:white; font-family:sans-serif; font-size:14px;'>
-            <b style='color:#B85EFF;'>Bailu</b> is a <b style='color:#FFD700;'>5★</b> character from the <b style='color:#B85EFF;'>Lightning</b> element who follows the <b>Path of Abundance</b>.<br><br>
-            In that holy city kissed by the dawn, the weaver caresses the golden thread and connects destiny. Aglaea the Goldweaver, 
-            the Chrysos Heir bearing the Coreflame of "Romance"... You shall summon the heroes of this world, and lead them to once 
-            again embark on an endless journey where they will smite down the gods, return the divine fire, and grant rebirth to the dying land of Amphoreus.
+            <b style='color:#C65ADE;'>Bailu</b> is a <b style='color:#C9A36A;'>5★</b> character from the <b style='color:#C65ADE;'>Lightning</b> element who follows the <b style="color:#61CF93;">Path of Abundance</b>.<br><br>
+            A vivacious young lady of the Vidyadhara race, she is known as the "Healer Lady" due to her expertise in medicine. She often dishes out unorthodox 
+            prescriptions such as "Stay well hydrated" and "Get a good night's rest." Bailu cannot bear to see people suffer, and that's why you'll see her with 
+            her eyes shut tightly as she cures ailments."As long as they're cured, that's all that matters, right?"
             </body></html>
         """);
         introText.setEditable(false);
